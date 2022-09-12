@@ -1,12 +1,11 @@
 n=int(input())
-r=0
+s=0
 temp=n
-while n:
-    rem=n%10
-    r=r*10+rem
+while n>0:
+    r=n%10
+    s=s*10+r
     n=n//10
-n =temp
-if n==r:
-        print(True)
+if(temp==s):
+    print(True)
 else:
     print(False)
